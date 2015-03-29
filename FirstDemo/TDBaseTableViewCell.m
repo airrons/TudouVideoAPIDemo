@@ -26,7 +26,8 @@
         self.videoTitle.text = _videoModel.videoTitle;
         self.ownerNickName.text = _videoModel.ownerNickName;
         self.viewCounts.text = [NSString stringWithFormat:@"%d 次观看",_videoModel.playTimes];
-        self.thumbnailView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_videoModel.picUrl]]];
+        NSURL * imageUrl = [NSURL URLWithString:_videoModel.picUrl];
+        [self.thumbnailView setImageWithURL:imageUrl placeholderImage:nil];
     }
 }
 

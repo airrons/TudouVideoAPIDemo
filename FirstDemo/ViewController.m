@@ -31,7 +31,7 @@
 - (void)queryVideoList{
     TDQueryService * query = [[TDQueryService alloc]init];
     query.q = @"LOL";
-    query.pageNo = 1;
+    query.pageNo = tableViewDataModel.page;
     query.pageSize = 25;
     query.queryTimeType = TD_QUERY_TIME_WEEK;
     query.querySourceType = TD_QUERY_SOURCE_VIDEO;
@@ -55,6 +55,7 @@
             tableViewDataModel.page = page;
             if (page < pageCount) {
                 tableViewDataModel.hasMore = YES;
+                tableViewDataModel.page += 1;
                 tableViewDataModel.queryState = TD_QUERY_STATE_NONE;
             }else{
                 tableViewDataModel.hasMore = NO;
@@ -150,16 +151,19 @@
 
 -(void)tdBaseTableViewDidSelect:(TDBaseTableView *)tableView indexPath:(NSIndexPath *)indexPath{
     TDVideoModel * videoModel = [tableView.tableViewDataModel.modelArray objectAtIndex:indexPath.row];
-    NSURL * url = [NSURL URLWithString:[videoModel playUrl]];
-    NSURLRequest * request = [NSURLRequest requestWithURL:url];
-    AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        DLog(@"-----------response %@",[[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        DLog(@"-----------error %@",error.description);
-
-    }];
-    [operation start];
+//    NSURL * url = [NSURL URLWithString:[videoModel playUrl]];
+//    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+//    AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
+//    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        DLog(@"-----------response %@",[[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        DLog(@"-----------error %@",error.description);
+//
+//    }];
+//    [operation start];
+    TDVideoPlayerViewController * viewController = [[TDVideoPlayerViewController alloc]init];
+    viewController.videoId = videoModel.vcode;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 -(void)tdBaseTableViewTapErrorForData:(TDBaseTableView *)tableView{

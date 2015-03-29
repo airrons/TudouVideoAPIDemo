@@ -10,6 +10,7 @@
 #import "TDBaseTableView.h"
 #import "TDTableViewDataModel.h"
 #import "TDDataHelper.h"
+#import "TDVideoPlayerViewController.h"
 
 @interface ViewController : UIViewController<TDBaseTableViewDelegate>
 

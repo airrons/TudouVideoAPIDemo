@@ -48,6 +48,8 @@
 		B3E742561A49CE5E007592ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E742541A49CE5E007592ED /* Main.storyboard */; };
 		B3E742581A49CE5E007592ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E742571A49CE5E007592ED /* Images.xcassets */; };
 		B3E7425B1A49CE5E007592ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E742591A49CE5E007592ED /* LaunchScreen.xib */; };
+		B3EBE1521AC84504008942FB /* TDVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EBE1511AC84504008942FB /* TDVideoPlayerViewController.m */; };
+		B3EBE1541AC84516008942FB /* player.html in Resources */ = {isa = PBXBuildFile; fileRef = B3EBE1531AC84516008942FB /* player.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +129,9 @@
 		B3E742551A49CE5E007592ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3E742571A49CE5E007592ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B3E7425A1A49CE5E007592ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B3EBE1501AC84504008942FB /* TDVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDVideoPlayerViewController.h; sourceTree = "<group>"; };
+		B3EBE1511AC84504008942FB /* TDVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDVideoPlayerViewController.m; sourceTree = "<group>"; };
+		B3EBE1531AC84516008942FB /* player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = player.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +236,7 @@
 		B37DC4571A50495900E0FF66 /* TD */ = {
 			isa = PBXGroup;
 			children = (
+				B3EBE1531AC84516008942FB /* player.html */,
 				B37DC4581A504EA900E0FF66 /* TDConstants.h */,
 				B37DC4541A50495200E0FF66 /* TDQueryService.h */,
 				B37DC4551A50495200E0FF66 /* TDQueryService.m */,
@@ -281,6 +287,8 @@
 				B37DC4571A50495900E0FF66 /* TD */,
 				B3E7424E1A49CE5E007592ED /* AppDelegate.h */,
 				B3E7424F1A49CE5E007592ED /* AppDelegate.m */,
+				B3EBE1501AC84504008942FB /* TDVideoPlayerViewController.h */,
+				B3EBE1511AC84504008942FB /* TDVideoPlayerViewController.m */,
 				B3E742511A49CE5E007592ED /* ViewController.h */,
 				B3E742521A49CE5E007592ED /* ViewController.m */,
 				B3E742541A49CE5E007592ED /* Main.storyboard */,
@@ -359,6 +367,7 @@
 			files = (
 				B357ADF91A6ACD2E0083D963 /* TDBaseTableViewCell.xib in Resources */,
 				B3E742561A49CE5E007592ED /* Main.storyboard in Resources */,
+				B3EBE1541AC84516008942FB /* player.html in Resources */,
 				B357ADFE1A6ADE560083D963 /* TDQueryCell.xib in Resources */,
 				B3E7425B1A49CE5E007592ED /* LaunchScreen.xib in Resources */,
 				B36749441A57FB05005FC458 /* LICENSE in Resources */,
@@ -401,6 +410,7 @@
 				B367494C1A57FB05005FC458 /* UIRefreshControl+AFNetworking.m in Sources */,
 				B36749451A57FB05005FC458 /* README.md in Sources */,
 				B357ADEE1A6AC8840083D963 /* TDDataHelper.m in Sources */,
+				B3EBE1521AC84504008942FB /* TDVideoPlayerViewController.m in Sources */,
 				B3E7424D1A49CE5E007592ED /* main.m in Sources */,
 				B367493D1A57FB05005FC458 /* AFHTTPSessionManager.m in Sources */,
 			);
@@ -511,7 +521,7 @@
 			baseConfigurationReference = 158CF95370FD7D7FF834D69F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (4RVR3548GC)";
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
@@ -540,7 +550,7 @@
 			baseConfigurationReference = 72288CD9375BB0861CA9882F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (4RVR3548GC)";
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",

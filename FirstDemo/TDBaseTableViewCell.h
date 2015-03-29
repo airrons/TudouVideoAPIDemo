@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TDVideoModel.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface TDBaseTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnailView;

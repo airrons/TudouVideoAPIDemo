@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B172EDE-D727-4B67-891C-00275B2D883F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FirstDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B403A59A4706D658D2CDF9AC7105F6075EE86D6F</key>
+		<string>https://github.com/airrons/TudouVideoAPIDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FirstDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B403A59A4706D658D2CDF9AC7105F6075EE86D6F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/airrons/TudouVideoAPIDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B403A59A4706D658D2CDF9AC7105F6075EE86D6F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B403A59A4706D658D2CDF9AC7105F6075EE86D6F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FirstDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
