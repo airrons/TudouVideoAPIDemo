@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TDBaseTableView.h"
+#import "TDTableViewDataModel.h"
+#import "TDDataHelper.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<TDBaseTableViewDelegate>
 
 
 @end
